@@ -914,7 +914,7 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
   justify-content: center;
   text-align: center;
   background-color: rgba(39, 38, 38, 0.112);
-  /* background-image: url('https://github.com/kalyan-raparthi/bci-blog/blob/main/Brain%20Black%20And%20White%20Aesthetic.jpg?raw=true'); */
+  /* background-image: url('https://i.pinimg.com/originals/8e/56/a3/8e56a332e0d38e60bde8e1a6c1b1cd43.gif'); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: var(--space-32) 0;
@@ -923,7 +923,10 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .hero-content {
-  max-width: 1600px;
+  /* max-width: 1600px; */
+  background-color: rgba(0, 0, 0, 0.238);
+  backdrop-filter: blur(10px);
+  padding: 6dvw;
 }
 
 .hero-title {
@@ -952,6 +955,10 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
   justify-content: center;
   margin-bottom: var(--space-32);
   flex-wrap: wrap;
+}
+
+.hero-subtitle p {
+  color: #000000;
 }
 
 .social-links {
@@ -1114,6 +1121,14 @@ section {
   transition: all var(--duration-normal) var(--ease-standard);
 }
 
+.services-card h3 {
+  font-size: 2.5rem;
+}
+
+.services-card p {
+  font-size: 5rem;
+}
+
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
@@ -1157,6 +1172,14 @@ section {
   border: 1px solid var(--color-grey-200);
   box-shadow: var(--shadow-sm);
   transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.work-card h3 {
+  font-size: 1.5rem;
+}
+
+.work-card p {
+  font-size: 1.3rem;
 }
 
 .work-card:hover {
@@ -1249,6 +1272,7 @@ section {
 /* Contact Section */
 .contact {
   background: var(--color-grey-50);
+  font-size: 1.5rem;
 }
 
 .contact-content {
@@ -1294,6 +1318,10 @@ section {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-grey-200);
   box-shadow: var(--shadow-sm);
+}
+
+.contact-form p { 
+  font-size: 6rem;
 }
 
 .form-row {
@@ -1617,4 +1645,12 @@ section {
 
 .blog_hero p {
   font-size: 1.5rem;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.hero a {
+  font-size: 1.2rem;
 }
