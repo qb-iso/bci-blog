@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Core BCI - Brain-Computer Interface Encyclopedia</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#hero">The Core BCI</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+
+                <li><a href="#about" class="nav-link">About</a></li>
+                
+                <li><a href="#works" class="nav-link">Blogs</a></li>
+                
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog_hero">
+    <section id="blog" class="blog-section">
+    <div class="container">
+    <article class="blog-post">
+      <header class="post-header">
+        <h1 class="post-title">Basics of BCI - Part 1</h1>
+        <p class="post-meta">Aug 19 &bull; 3 min read</p>
+      </header>
+
+      <section class="post-content">
+        <h2>Brain-Computer Interfaces</h2>
+        <p>Brain-Computer Interface (BCI) technology is revolutionizing how humans interact with computers. At its core, BCI is a communication system that captures commands from the brain and translates them into a language a computer can understand—allowing it to perform specific tasks. While its current applications are largely medical, the potential for expansion into non-medical domains like gaming, education, and assistive technologies is rapidly growing.</p>
+        <p>In this introductory post, I’ll walk you through the key components of a BCI system to give you an overall picture. Each component will be explored in detail in subsequent blog entries.</p>
+
+        <h3>1. Capturing Brain Signals</h3>
+        <p>The first step in any BCI system is acquiring brain signals. This is done using sensors that detect the electrical activity of neurons. Based on the placement of these sensors, BCIs are categorized as:</p>
+
+        <h4>Invasive BCI</h4>
+        <p>Sensors (electrodes) are implanted directly into brain tissue for high-precision recording of brain signals. These require invasive surgeries where the skull is opened to insert the electrodes directly into the layers of the brain.</p>
+
+        <h4>Partially Invasive BCI</h4>
+        <p>Implants are placed inside the skull but outside brain tissue. The brain is covered by three layers (dura, arachnoid, and pia) called meninges. These meninges lie inside the skull bones. The implants are placed either directly above the brain surface but below the dura mater (subdural electrocorticography) or on top of these meninges but inside the skull bone (extradural electrocorticography). These BCIs are less invasive compared to invasive BCIs but more invasive than non-invasive BCIs. The data recorded has more noise compared to invasive BCIs but fewer artifacts compared to non-invasive BCIs.</p>
+
+        <h4>Non-Invasive BCI</h4>
+        <p>Sensors are placed outside the skull—EEG, fMRI, Near-Infrared Spectroscopy (NIRS), EMG. These sensors lie outside the skin and do not require invasive procedures to implant them. They can be removed and reused as needed. Due to their non-invasive nature, these sensors are more widely used compared to other types.</p>
+
+        <p><strong>Signal Acquisition Methods:</strong> We use the following devices to acquire the signals: Electroencephalogram (EEG), Electrocorticogram (ECoG), Functional Magnetic Resonance Imaging (fMRI), Near-Infrared Spectroscopy (NIRS), Electromyography (EMG), among others.</p>
+
+        <p>There are various types of signals we acquire using the above devices: visual evoked potentials, P300, SSVEP, hybrid signals, spontaneous signals.</p>
+
+        <p>Once the subjects are prepared, electrodes are placed on the scalp to record brain activity. EEG signals vary significantly between individuals and even across different recording sessions for the same individual. Therefore, multiple recording sessions are typically required to collect sufficient data and train the BCI system to accurately recognize specific commands. The duration of each recording session is determined by the objectives of the study or application.</p>
+
+        <h3>2. Signal Preprocessing and Extraction</h3>
+        <p>Raw brain data is complex and noisy. Along with the actual command signals, it also carries background noise (e.g., eye blinks, heartbeats, electromagnetic disturbances from the surrounding environment) and overlapping signals from multiple brain regions. We need to extract the meaningful commands from these distractions.</p>
+
+        <p><strong>Techniques used:</strong> Independent Component Analysis (ICA), Common Average Reference (CAR), Adaptive Filters, Principal Component Analysis (PCA), Surface Laplacian (SL), Signal De-Noising, among others.</p>
+
+        <p>These methods help filter out artifacts and environmental disturbances, allowing the system to focus on the relevant neural signals.</p>
+
+        <h3>3. Signal Amplification and Feature Extraction</h3>
+        <p>Sometimes, the extracted signals are weak and need amplification to enhance accuracy. Once refined, the signals are transformed into a feature vector, which is a compact representation of the command.</p>
+        <p>Feature vectors vary depending on the task. The feature vectors related to motor tasks are different from those related to visual tasks. The data we gather consists of multiple such feature vectors. Hence, it is necessary to classify them to make it easier for the application device to understand the command.</p>
+
+        <h3>4. Classification of Commands</h3>
+        <p>The feature vector is classified based on the type of command it carries. BCI classifiers use machine learning algorithms to categorize the signal into actionable outputs such as moving a robotic arm in a specific direction, selecting an icon on the screen, or controlling a wheelchair.</p>
+        <p><strong>Classification methods:</strong> Linear classifiers, neural networks, non-linear Bayesian classifiers, nearest neighbor classifiers, hybrid classifiers, among others.</p>
+
+        <h3>5. Execution of the Task</h3>
+        <p>Once classified, the command is sent to the computer or external device to perform the desired action. This is where the brain’s intent becomes a tangible output—whether it's cursor movement, robotic control, or communication.</p>
+
+        <h3>6. Training and Adaptation</h3>
+        <p>BCI systems require training to adapt to individual users. This is one of the current limitations of BCI technology. There are two main types:</p>
+        <ul>
+          <li><strong>Synchronous BCI:</strong> Requires active input from the user at specific times.</li>
+          <li><strong>Asynchronous BCI:</strong> Continuously monitors brain activity and detects commands as they occur naturally.</li>
+        </ul>
+        <p>In the upcoming blog posts, I’ll dive deeper into each of these components.</p>
+      </section>
+    </article>
+  </div>
+</section>
+
+    </div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CONTACT US</h2>
+                <p class="section-subtitle">Reach out for collaboration or just say hello</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <p>Hyderabad, Telangana, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p><a href="mailto:nikkisangepu@gmail.com">nikkisangepu@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p><a href="tel:+919032474399">+91-9032474399</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Core BCI</h4>
+                    <p>Advancing Brain-Computer Interface technology through education and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Hyderabad, Telangana, India</p>
+                    <p>nikkisangepu@gmail.com</p>
+                    <p>+91-9032474399</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" target="_blank">Facebook</a>
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Core BCI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

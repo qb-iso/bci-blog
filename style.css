@@ -927,7 +927,7 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 }
 
 .hero-title {
-  font-size: clamp(var(--font-size-3xl), 8vw, 100px);
+  font-size: clamp(var(--font-size-3xl), 15vw, 100px);
   font-weight: var(--font-weight-bold);
   color: var(--color-black) !important;
   margin-bottom: var(--space-24);
@@ -1591,4 +1591,30 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blog_hero {
+  margin-left: 17dvw;
+  margin-right: 17dvw;
+}
+
+
+.blog_hero h1  {
+  font-size: 5rem;
+}
+
+.blog_hero h2  {
+  font-size: 4rem;
+}
+
+.blog_hero h3  {
+  font-size: 3rem;
+}
+
+.blog_hero h4  {
+  font-size: 2rem;
+}
+
+.blog_hero p {
+  font-size: 1.5rem;
 }
