@@ -913,8 +913,8 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgba(39, 38, 38, 0.112);
-  /* background-image: url('https://i.pinimg.com/originals/8e/56/a3/8e56a332e0d38e60bde8e1a6c1b1cd43.gif'); */
+  /* background-color: rgba(255, 0, 0, 0.112); */
+  background-image: url('http://i.pinimg.com/originals/ed/40/2d/ed402d125cdfba223226e725857508a1.gif');
   background-repeat: no-repeat;
   background-size: cover;
   padding: var(--space-32) 0;
@@ -925,8 +925,8 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
 .hero-content {
   /* max-width: 1600px; */
   background-color: rgba(0, 0, 0, 0.238);
-  backdrop-filter: blur(10px);
-  padding: 6dvw;
+  backdrop-filter: blur(15px);
+  padding: 10dvw;
 }
 
 .hero-title {
